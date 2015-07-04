@@ -44,6 +44,9 @@ pg_ctl -D data_dir  reload
 ```
 
 参考资料：
+
 1.[第二十二章 区域](https://wiki.postgresql.org/wiki/9.1%E7%AC%AC%E4%BA%8C%E5%8D%81%E4%BA%8C%E7%AB%A0)
+
 2.[Monetary Types](http://www.postgresql.org/docs/current/static/datatype-money.html)
+
 3.[pg_ctl](http://www.postgresql.org/docs/current/static/app-pg-ctl.html)
