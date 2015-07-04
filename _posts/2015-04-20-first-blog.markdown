@@ -14,8 +14,11 @@ tags: PostgreSQL 数据库系统
 解决方案:
 
 1.修改CentOS的系统时区:`tzselect`命令选择Asia按照提示操作即可,另外一种方法是直接拷贝文件
+
  `sudo cp /usr/share/zoneinfo/$主时区/$次时区 /etc/localtime`
+ 
 在中国可以使用(以上海为例)：
+
 `sudo cp /usr/share/zoneinfo/Asia/Shanghai /etc/localtime`
 
 2.修改postgresql.conf:
