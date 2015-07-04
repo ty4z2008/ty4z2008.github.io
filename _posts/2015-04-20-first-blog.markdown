@@ -22,6 +22,7 @@ tags: PostgreSQL 数据库系统
 `sudo cp /usr/share/zoneinfo/Asia/Shanghai /etc/localtime`
 
 2.修改postgresql.conf:
+
 ```
 lc_messages = 'zh_CN.UTF-8'			# 系统错误信息用中文显示
 
