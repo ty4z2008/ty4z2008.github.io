@@ -23,12 +23,15 @@ tags: PostgreSQL 数据库系统
 
 2.修改postgresql.conf:
 
-```
-lc_messages = 'zh_CN.UTF-8'			# 系统错误信息用中文显示
-lc_monetary = 'zh_CN.utf8'			# 货币格式选择人民币
-lc_numeric = 'zh_CN.UTF-8'			# 数据类型
-lc_time = 'zh_CN.UTF-8'				# 时区
-```
+
+`lc_messages = 'zh_CN.UTF-8'			# 系统错误信息用中文显示`
+
+`lc_monetary = 'zh_CN.utf8'			# 货币格式选择人民币`
+
+`lc_numeric = 'zh_CN.UTF-8'			# 数据类型`
+
+`lc_time = 'zh_CN.UTF-8'				# 时区`
+
 
 保存之后重新载入配置文件即可:
 ```
