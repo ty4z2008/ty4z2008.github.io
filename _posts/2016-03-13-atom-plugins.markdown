@@ -2,8 +2,8 @@
 layout: post
 title:  "Atom常用插件"
 date:   2016-03-13 16:32:49
-categories: Dev Tools
-tags: DevTools
+categories: DevTools
+tags: DevTools 开发工具
 ---
 
 1. `atom-beautify` 代码格式美化
