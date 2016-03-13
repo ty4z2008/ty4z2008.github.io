@@ -2,7 +2,7 @@
 layout: post
 title:  "Atom常用插件"
 date:   2016-03-13 16:32:49
-categories: Dev Tools
+categories: DevTools
 tags: DevTools
 ---
 
