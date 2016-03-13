@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>草稿本</title>
+    <description></description>
+    <link>http://blog.microdba.com/</link>
+    <atom:link href="http://blog.microdba.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Sun, 13 Mar 2016 16:27:43 +0800</pubDate>
+    <lastBuildDate>Sun, 13 Mar 2016 16:27:43 +0800</lastBuildDate>
+    <generator>Jekyll v3.1.2</generator>
+    
+      <item>
+        <title>Atom常用插件</title>
+        <description>&lt;ol&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;atom-beautify&lt;/code&gt; 代码格式美化&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;atom-css-comb&lt;/code&gt; 合并css&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;atom-live-server&lt;/code&gt; 本地http服务器&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;atom-ternjs&lt;/code&gt; js自动完成&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;autocomplete-python&lt;/code&gt; python自动完成&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;css-clean&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;csslint&lt;/code&gt; css错误检查&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;jslint&lt;/code&gt; js错误检查&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;jshint&lt;/code&gt; js错误检查&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;go-config&lt;/code&gt; go环境配置&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;quick-query&lt;/code&gt; postgresql、mysql数据查询&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;simplified-chinese-menu&lt;/code&gt; 汉化&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;python-tools&lt;/code&gt; 可以快速定位函数或变量声明位置，很适合阅读python源码&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;linter-eslint&lt;/code&gt;  语法检查&lt;/li&gt;
+&lt;/ol&gt;
+</description>
+        <pubDate>Sun, 05 Jul 2015 07:59:49 +0800</pubDate>
+        <link>http://blog.microdba.com/dev/tools/2015/07/05/atom-plugins.html</link>
+        <guid isPermaLink="true">http://blog.microdba.com/dev/tools/2015/07/05/atom-plugins.html</guid>
+        
+        <category>DevTools</category>
+        
+        
+        <category>Dev</category>
+        
+        <category>Tools</category>
+        
+      </item>
+    
+      <item>
+        <title>关于PostgreSQL的时间和货币区域问题</title>
+        <description>&lt;p&gt;出现情况的背景:购买的是&lt;a href=&quot;https://www.linode.com/&quot;&gt;Linode&lt;/a&gt;的服务,服务的所在地在日本,而地理区域却是美国,但是部署的应用是针对国内区域,在开始安装pg的时候没有太上心,但随着业务的发展和应用的更新区域的问题就慢慢的出现了.例如用户注册的时间,收费项目计费的计算时间,货币单位(Monetary types)等等就开始影响业务的发展.那么能够做的就是对数据库系统和OS系统的位置区域进行调整.&lt;/p&gt;
+
+&lt;p&gt;环境:CentOS 7
+数据库:PostgreSQL 9.3.6&lt;/p&gt;
+
+&lt;p&gt;解决方案:&lt;/p&gt;
+
+&lt;p&gt;1.修改CentOS的系统时区:&lt;code class=&quot;highlighter-rouge&quot;&gt;tzselect&lt;/code&gt;命令选择Asia按照提示操作即可,另外一种方法是直接拷贝文件&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;sudo cp /usr/share/zoneinfo/$主时区/$次时区 /etc/localtime&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;在中国可以使用(以上海为例)：&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;sudo cp /usr/share/zoneinfo/Asia/Shanghai /etc/localtime&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;2.修改postgresql.conf:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;lc_messages &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&#39;zh_CN.UTF-8&#39;&lt;/span&gt;			&lt;span class=&quot;c&quot;&gt;# 系统错误信息用中文显示&lt;/span&gt;
+
+lc_monetary &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&#39;zh_CN.utf8&#39;&lt;/span&gt;			&lt;span class=&quot;c&quot;&gt;# 货币格式选择人民币&lt;/span&gt;
+
+lc_numeric &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&#39;zh_CN.UTF-8&#39;&lt;/span&gt;			&lt;span class=&quot;c&quot;&gt;# 数据类型&lt;/span&gt;
+
+lc_time &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&#39;zh_CN.UTF-8&#39;&lt;/span&gt;				&lt;span class=&quot;c&quot;&gt;# 时区&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;保存之后重新载入配置文件即可:
+&lt;code class=&quot;highlighter-rouge&quot;&gt;shell
+select pg_reload_conf();
+&lt;/code&gt;
+or&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;pg_ctl -D data_dir  reload
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;参考资料：&lt;/p&gt;
+
+&lt;p&gt;1.&lt;a href=&quot;https://wiki.postgresql.org/wiki/9.1%E7%AC%AC%E4%BA%8C%E5%8D%81%E4%BA%8C%E7%AB%A0&quot;&gt;第二十二章 区域&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;2.&lt;a href=&quot;http://www.postgresql.org/docs/current/static/datatype-money.html&quot;&gt;Monetary Types&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;3.&lt;a href=&quot;http://www.postgresql.org/docs/current/static/app-pg-ctl.html&quot;&gt;pg_ctl&lt;/a&gt;&lt;/p&gt;
+</description>
+        <pubDate>Sun, 05 Jul 2015 07:59:49 +0800</pubDate>
+        <link>http://blog.microdba.com/database/pg/2015/07/05/first-blog.html</link>
+        <guid isPermaLink="true">http://blog.microdba.com/database/pg/2015/07/05/first-blog.html</guid>
+        
+        <category>PostgreSQL</category>
+        
+        <category>数据库系统</category>
+        
+        
+        <category>database</category>
+        
+        <category>pg</category>
+        
+      </item>
+    
+  </channel>
+</rss>

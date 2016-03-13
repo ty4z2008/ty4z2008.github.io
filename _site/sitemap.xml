@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<url>
+<loc>http://blog.microdba.com/dev/tools/2015/07/05/atom-plugins.html</loc>
+<lastmod>2015-07-05T07:59:49+08:00</lastmod>
+</url>
+<url>
+<loc>http://blog.microdba.com/database/pg/2015/07/05/first-blog.html</loc>
+<lastmod>2015-07-05T07:59:49+08:00</lastmod>
+</url>
+<url>
+<loc>http://blog.microdba.com/404.html</loc>
+</url>
+<url>
+<loc>http://blog.microdba.com/</loc>
+</url>
+<url>
+<loc>http://blog.microdba.com/ie.html</loc>
+<lastmod>2015-03-17T07:06:34+08:00</lastmod>
+</url>
+</urlset>
