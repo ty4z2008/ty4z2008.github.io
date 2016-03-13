@@ -8,11 +8,11 @@ url: "http://blog.microdba.com" # the base hostname & protocol for your site
 
 # Sidebar filter
 # Choose 'tag' or 'category' as filter in sidebar.
-filter: 'tag'
+filter: 'category'
 
 
 # Social account
-# twitter:  username
+twitter:  ty4z2008
 weibo:    ty4z2008
 github:   ty4z2008
 # codepen:  username
@@ -27,6 +27,8 @@ disqus_shortname: websec
 # google_analytics: tracking_ID
 
 
+timezone: Asia/Shanghai
+future: true
 # Build settings
 markdown: kramdown
 sass:
