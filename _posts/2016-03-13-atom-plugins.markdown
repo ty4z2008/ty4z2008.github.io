@@ -21,5 +21,5 @@ tags: DevTools
 13. `python-tools`
 14. `linter-eslint`  js语法检查
 15. `go-config` golang环境检查工具
-16. `autocomplete-go` go自动完成工具
+16. `autocomplete-go` go自动完成工具,依赖`go-get`插件
 17. `go-plus` gofmt,goconfig,godoc支持工具
