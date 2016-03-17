@@ -7,7 +7,7 @@ tags: DevTools
 ---
 
 1. `atom-beautify` 代码格式美化
-2. `atom-css-comb` 合并css
+2. `atom-css-comb`
 3. `atom-live-server` 本地http服务器
 4. `atom-ternjs` js自动完成
 5. `autocomplete-python` python自动完成
@@ -18,5 +18,8 @@ tags: DevTools
 10. `go-config` go环境配置
 11. `quick-query` postgresql、mysql数据查询
 12. `simplified-chinese-menu` 汉化
-13. `python-tools` 可以快速定位函数或变量声明位置，很适合阅读python源码
-14. `linter-eslint`  语法检查
+13. `python-tools`
+14. `linter-eslint`  js语法检查
+15. `go-config` golang环境检查工具
+16. `autocomplete-go` go自动完成工具
+17. `go-plus` gofmt,goconfig,godoc支持工具
