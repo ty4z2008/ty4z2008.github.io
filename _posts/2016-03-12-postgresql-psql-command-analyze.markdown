@@ -7,7 +7,8 @@ tags: postgresql
 ---
 
 postgresql会提供一些系统命令方便开发人员使用，例如`\dt`（查看当前模式所有表）,`\df`（当前模式的函数）,`\l`（查看所有数据库）等等的此类命令，这些命令在系统内部其实都是sql的一个别名而已。例如`\l`:
-```sql
+
+```
 SELECT d.datname as "Name", --datname数据库名
        pg_catalog.pg_get_userbyid(d.datdba) as "Owner",--pg_catalog为系统表,pg_get_userbyid通过pg_user的oid获取用户名
        pg_catalog.pg_encoding_to_char(d.encoding) as "Encoding",--转换编码对应的id转换成字符
@@ -17,14 +18,17 @@ SELECT d.datname as "Name", --datname数据库名
 FROM pg_catalog.pg_database d
 ORDER BY 1;
 ```
+
 对比查询`pg_database`数据
-```sql
+
+```
 SELECT * FROM pg_database;
 ```
 查看当前拥有多少数据库，`\l`等同于上面的那一段sql，只是对数据进行了格式化处理。
 
 如何查看这些命令对应的sql语句可以在登录时使用`-E`参数。例如:
-```bash
+
+```
 psql -Upostgres -E -h192.168.2.101
 ```
 
