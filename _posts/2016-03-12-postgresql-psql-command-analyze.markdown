@@ -35,4 +35,5 @@ psql -Upostgres -E -h192.168.2.101
 如果你是需要做一个postgresql的Web管理平台，那么可以通过同样的思路来实现相同的功能。
 
 参考文献：
-system infomation functions:http://www.postgresql.org/docs/9.5/static/functions-info.html
+
+system infomation functions:[http://www.postgresql.org/docs/9.5/static/functions-info.html](http://www.postgresql.org/docs/9.5/static/functions-info.html)
