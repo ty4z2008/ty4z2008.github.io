@@ -1,0 +1,14 @@
+---
+layout: post
+title:  "Qcon 2016年PPT演示小工具"
+date:   2016-03-13 16:32:49
+categories: DevTools
+tags: DevTools
+---
+
+做这个工具的初衷是因为在电脑端通过官网看PPT太痛苦了，每翻一张幻灯片都需要移动滚动条。然后就根据规则做了一个阅读PPT的工具。
+为了保留版权也就没有抓取PPT具体信息。如果你不会使用可以看一看做的演示demo
+
+![Demo](http://7xtcs7.com2.z0.glb.clouddn.com/two.gif)
+
+工具地址:[Qcon 2016 Keynote](/_demo/qcon.html)
