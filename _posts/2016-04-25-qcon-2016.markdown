@@ -9,7 +9,7 @@ tags: DevTools
 做这个工具的初衷是因为在电脑端通过官网看PPT太痛苦了，每翻一张幻灯片都需要移动滚动条。然后就根据规则做了一个阅读PPT的工具。
 为了保留版权也就没有抓取PPT具体信息。如果你不会使用可以看一看做的演示demo.
 
-点击[QCon北京2016幻灯片下载合集](http://ppt.geekbang.org/)，选择你想看的ppt。先打开，然后复制第一张图片地址到下面的输入框。点击确认即可。（支持方向键“→”与“←”翻页）[http://7xtcs7.com2.z0.glb.clouddn.com/two.gif]
+点击[QCon北京2016幻灯片下载合集](http://ppt.geekbang.org/)，选择你想看的ppt。先打开，然后复制第一张图片地址到下面的输入框。点击确认即可。（支持方向键“→”与“←”翻页）[Demo演示](http://7xtcs7.com2.z0.glb.clouddn.com/two.gif)
 
 ![Demo](http://7xtcs7.com2.z0.glb.clouddn.com/two.gif)
 
