@@ -11,4 +11,4 @@ tags: DevTools
 
 ![Demo](http://7xtcs7.com2.z0.glb.clouddn.com/two.gif)
 
-工具地址:[Qcon 2016 Keynote](/_demo/qcon.html)
+工具地址:[Qcon 2016 Keynote](/demo/qcon.html)
