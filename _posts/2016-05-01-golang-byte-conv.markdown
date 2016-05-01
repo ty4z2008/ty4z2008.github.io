@@ -67,8 +67,7 @@ func  load(s int64) string {
 ```
 
 ```
-//测试命令
-
+//运行测试
 ➜ /home/sec/go/src/main >go run byte.go 10000000
 9M
 ```
