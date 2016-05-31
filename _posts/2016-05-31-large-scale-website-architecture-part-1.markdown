@@ -2,7 +2,7 @@
 layout: post
 title:  "阅读：大型网站技术架构.技术原理与案例分析（一）"
 date:   2016-05-31 15:32:49
-categories: 阅读
+categories: reading
 tags: 架构,大型网站技术架构
 ---
 
