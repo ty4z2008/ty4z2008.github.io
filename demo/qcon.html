@@ -8,7 +8,11 @@
     <link rel="stylesheet" href="//cdn.bootcss.com/bootstrap/4.0.0-alpha/css/bootstrap.min.css">
     <title>Qcon keynote</title>
     <style type="text/css">
-        .input-large {
+		.input-box{
+			display: block;
+			text-align: center;
+		}
+        .input-box .input-large {
             height: 43px;
             padding: 10px 16px;
             font-size: 17px;
@@ -17,36 +21,76 @@
             width: 70%;
             border: 1px solid #8E8E8E;
         }
+		input,button{
+			outline: 0;
+		}
+		.op-box{
+			position: relative;
+			width: 100%;
+			margin-top:20px;
+		}
+		.opt-box .next-btn{
+			margin: 10px auto;
+		}
+		.clearfix:after{
+			content:"";
+			display: block;
+			clear: both;
+		}
+		.tips{
+			text-align: center;
+			display: block;
+			margin: 10px auto 30px 0;
+		}
+		.tips h4{
+			font-weight: 300;
+			line-height: 36px;
+		}
+		.keynote{
+			margin-bottom: 10px;
+			height:600px;
+			text-align:center
+		}
+		.next-btn{
+			width: 100%;
+		    display: block;
+		    margin: 20px 0;
+			text-align: center;
+		}
     </style>
 </head>
 
 
 <body>
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12 col-lg-12" style="text-align:center">
-                <h4>点击<a href="http://ppt.geekbang.org/" target="_blank" alt="QCon北京2016幻灯片下载合集">QCon北京2016幻灯片下载合集</a>，选择你想看的ppt。
-                  先打开，然后复制第一张图片地址到下面的输入框。点击确认即可。（支持方向键“→”与“←”翻页）
-                  <a href="http://7xtcs7.com2.z0.glb.clouddn.com/two.gif" target="_blank" alt="演示视频">演示视频</a></h4>
-            </div>
-            <div class="col-md-12 col-lg-12" id="img" style="height:600px;text-align:center">
+    <div class="">
 
-            </div>
-            <div style="position:relative;text-align:center;margin-top:20px;">
-                <input type="text" id="domain" class="input-large" placeholder="http://7xiox7.com2.z0.glb.qiniucdn.com/571b28399dd0f-01.jpg?2016">
-                <button class="btn btn-success" id="confirm">确认</button>
-                <br/>
-                <br/>
-                <button class="btn btn-info" id="up" data-page="1">上一页</button>
+		<div class="col-md-12">
+			<div class="row">
+	            <div class="col-xs-12 col-md-12 col-lg-12 tips">
+	                <h4>点击<a href="http://ppt.geekbang.org/" target="_blank" alt="QCon北京2016幻灯片下载合集">QCon北京2016</a>、<a href="http://ppt.geekbang.org/qconbj2017" target="_blank" alt="QCon北京2016幻灯片下载合集">QCon北京2017</a> 幻灯片下载合集，选择你想看的ppt。
+	                  先打开，然后复制第一张图片地址到下面的输入框。点击确认即可。（支持方向键“→”与“←”翻页）
+	                  <a href="http://7xtcs7.com2.z0.glb.clouddn.com/two.gif" target="_blank" alt="演示视频">演示视频</a></h4>
+	            </div>
+	            <div class="col-xs-12 col-md-12 col-lg-12 keynote" id="img">
+	            </div>
+	            <div class="row op-box col-xs-12 col-md-12 col-lg-12 clearfix">
+	                <div class="input-box">
+						<input type="text" id="domain" class="input-large" placeholder="http://7xiox7.com2.z0.glb.qiniucdn.com/571b28399dd0f-01.jpg">
+					</div>
 
-                <button class="btn btn-success" id="next" data-page="1">下一页</button>
-            </div>
-        </div>
+					<div class="next-btn">
+						<button class="btn btn-info" id="up" data-page="1">上一页</button>
+						<button class="btn btn-success" id="confirm">确认</button>
+		                <button class="btn btn-info" id="next" data-page="1">下一页</button>
+					</div>
+	            </div>
+	        </div>
+		</div>
     </div>
     <script type="text/javascript" src="//cdn.bootcss.com/jquery/1.12.0/jquery.min.js"></script>
     <script type="text/javascript">
         $(document).ready(function() {
-            var qiniu_modal = 'imageView2/2/w/800/h/800/format/jpg/interlace/1/q/80/ignore-error/1';
+            var QINIU_MOD = 'imageView2/2/w/800/h/800/format/jpg/interlace/1/q/100/ignore-error/1';
             var _e = (function() {
                 var qix = {};
                 qix.next = function(e) {
@@ -54,18 +98,18 @@
                     var tmp = $("#next").attr("data-page");
                     tmp = parseInt(tmp) + parseInt(1);
                     if (tmp < 10) {
-                        var str = '<img src="' + _domain_10 + '-0' + tmp + '.jpg?' + qiniu_modal + '">'
+                        var str = '<img src="' + _domain_10 + '-0' + tmp + '.jpg?' + QINIU_MOD + '">'
                     } else {
-                        var str = '<img src="' + _domain_10 + '-' + tmp + '.jpg?' + qiniu_modal + '">'
+                        var str = '<img src="' + _domain_10 + '-' + tmp + '.jpg?' + QINIU_MOD + '">'
                     }
 
 
                     $("#img").html(str);
                     $("img").on("error", function() {
                         if (tmp < 10) {
-                            var str = '<img src="' + _domain_10 + '-0' + tmp + '.jpg?' + qiniu_modal + '">'
+                            var str = '<img src="' + _domain_10 + '-0' + tmp + '.jpg?' + QINIU_MOD + '">'
                         } else {
-                            var str = '<img src="' + _domain_10 + '-' + tmp + '.jpg?' + qiniu_modal + '">'
+                            var str = '<img src="' + _domain_10 + '-' + tmp + '.jpg?' + QINIU_MOD + '">'
                         }
                         $("#img").html(str);
                         alert("已经最后一页了");
@@ -80,11 +124,11 @@
                     tmp = parseInt(tmp) - parseInt(1);
 
                     if (tmp < 10 && tmp > 0) {
-                        var str = '<img src="' + _domain_10 + '-0' + tmp + '.jpg?' + qiniu_modal + '">'
+                        var str = '<img src="' + _domain_10 + '-0' + tmp + '.jpg?' + QINIU_MOD + '">'
                     } else if (tmp == 0) {
                         alert("第一页了")
                     } else {
-                        var str = '<img src="' + _domain_10 + '-' + tmp + '.jpg?' + qiniu_modal + '">'
+                        var str = '<img src="' + _domain_10 + '-' + tmp + '.jpg?' + QINIU_MOD + '">'
                     }
                     $("#img").html(str)
                     $("#up").attr("data-page", tmp);
@@ -99,7 +143,7 @@
                 var _domain_10 = ($("#domain").val()).substring(0, $("#domain").val().search(/-\d{2}.*/g));
                 $("#up").attr("data-page", 1);
                 $("#next").attr("data-page", 1);
-                $("#img").html('<img src="' + _domain_10 + '-01.jpg?' + qiniu_modal + '">');
+                $("#img").html('<img src="' + _domain_10 + '-01.jpg?' + QINIU_MOD + '">');
             });
 
             $("#up").click(function(e) {
