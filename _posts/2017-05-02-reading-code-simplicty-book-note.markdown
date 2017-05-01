@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "阅读<Code Simplicity:The Science of Software development> 笔记"
+title:  "阅读《Code Simplicity:The Science of Software development》笔记"
 date:   2017-05-02 00:16:29
 categories: Thinking
 tags: 简约之美
