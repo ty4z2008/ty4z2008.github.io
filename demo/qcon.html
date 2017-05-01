@@ -80,6 +80,7 @@
 
 					<div class="next-btn">
 						<button class="btn btn-info" id="up" data-page="1">上一页</button>
+						<input type="text" value="" id="page" placeholder="页码" />
 						<button class="btn btn-success" id="confirm">确认</button>
 		                <button class="btn btn-info" id="next" data-page="1">下一页</button>
 					</div>
@@ -116,7 +117,10 @@
                         return false;
                     })
                     $("#next").attr("data-page", tmp);
-                    $("#up").attr("data-page", tmp)
+                    $("#up").attr("data-page", tmp);
+
+
+					$("#page").val(tmp);
                 }
                 qix.up = function(e) {
                     var _domain_10 = ($("#domain").val()).substring(0, $("#domain").val().search(/-\d{2}.*/g));
@@ -133,6 +137,7 @@
                     $("#img").html(str)
                     $("#up").attr("data-page", tmp);
                     $("#next").attr("data-page", tmp);
+					$("#page").val(tmp);
                 }
                 return {
                     up: qix.up,
@@ -145,6 +150,9 @@
                 $("#next").attr("data-page", 1);
                 $("#img").html('<img src="' + _domain_10 + '-01.jpg?' + QINIU_MOD + '">');
             });
+			$("#domain").keypress(function(){
+				$("#confirm").trigger("click");
+			})
 
             $("#up").click(function(e) {
                 _e.up(e)
