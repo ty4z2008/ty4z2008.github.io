@@ -145,4 +145,4 @@ Three-Pass Approach 三阶段阅读法
   Conferences](https://people.inf.ethz.ch/troscoe/pubs/review-writing.pdf)
 - [Writing Technical Articles](http://researchswinger.org/others/writing-schulz.pdf)
 - [Whitesides’ Group: Writing a
-  Paper
+Paper](https://intra.ece.ucr.edu/~rlake/Whitesides_writing_res_paper.pdf)
