@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "迁移私有化git到gitlab"
-date:   2018-12-01 15:16:29
+date:   2018-12-09 15:16:29
 categories: Docker
 tags: 阅读笔记
 ---
