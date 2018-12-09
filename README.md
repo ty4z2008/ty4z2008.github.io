@@ -15,3 +15,4 @@
 - [阅读《Code Simplicity:The Science of Software development》笔记](./_posts/2017-05-02-reading-code-simplicty-book-note.markdown)
 - [如何阅读一篇论文](./_posts/2018-10-18-how-to-reading-a-paper.md)
 - [Dockerfile最佳实践Tips](./_posts/2018-12-01-dockerfile-best-practices.md)
+- [迁移私有化git到gitlab](./_posts/2018-12-07-migrate-private-git-to-private-gitlab.md)
