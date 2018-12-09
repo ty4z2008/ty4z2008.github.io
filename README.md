@@ -16,3 +16,4 @@
 - [如何阅读一篇论文](./_posts/2018-10-18-how-to-reading-a-paper.md)
 - [Dockerfile最佳实践Tips](./_posts/2018-12-01-dockerfile-best-practices.md)
 - [迁移私有化git到gitlab](./_posts/2018-12-07-migrate-private-git-to-private-gitlab.md)
+- [PostgreSQL开发者模式错误反馈与日志设置](./_posts/2018-12-09-postgres-runtime-config-logging.md)
