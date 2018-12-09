@@ -17,12 +17,13 @@ tags: 阅读笔记
 **调研**
 
 选择了两个git工具：[gogs](gogs.io)和[gitlab](gitlab.com)
-|       |  Gogs     |   Gitlab    |
-|---    |---    |---    |
-| 基本的GIT| 1      |  1     |
-| 管理界面| 1      |  1     |
-| CI/CD   |  0     |   1    |
-| Codereview   |   0    |   1    |
+
+|    -      |  Gogs     |   Gitlab    |
+|---        |---        |---    |
+| 基本的GIT  | 1         |  1     |
+| 管理界面   | 1         |  1     |
+| CI/CD     |  0        |   1    |
+| Codereview|   0       |   1    |
 
 基于以上的考虑，我们最终选择Gitlab。
 
