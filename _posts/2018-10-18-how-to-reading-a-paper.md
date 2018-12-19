@@ -14,7 +14,7 @@ Learning to efficiently read a paper is a critical but rarely taught skill.
 
 Three-Pass Approach 三阶段阅读法
 
-第一阶段：把握阅读论文的整体观点，大概讲述一个论点
+第一阶段：掌握该论文的整体观点，讲述的是一个什么观点
 
 第二阶段：领略论文的内容，但非所有的细节
 
