@@ -23,7 +23,7 @@ tags: kubernetes
 
 1. 首先我们给节点打上标签BusyBox，并且不允许其他节点调度
 
-```
+```bash
 kubectl label node node-name  node-role=busybox
 
 #添加
