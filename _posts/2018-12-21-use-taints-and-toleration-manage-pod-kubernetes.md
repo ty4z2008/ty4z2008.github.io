@@ -83,7 +83,7 @@ spec:
 `tolerationSeconds` 是当 pod 需要被驱逐时，可以继续在 node 上运行的时间,单位秒。
 
 
-```
+```yaml
 tolerations:
 - key: "role"
   operator: "Equal"
