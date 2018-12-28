@@ -18,3 +18,4 @@
 - [迁移私有化git到gitlab](./_posts/2018-12-07-migrate-private-git-to-private-gitlab.md)
 - [PostgreSQL开发者模式错误反馈与日志设置](./_posts/2018-12-09-postgres-runtime-config-logging.md)
 - [在Kubernetes中使用Taints和Toleration划分专用节点](./_posts/2018-12-21-use-taints-and-toleration-manage-pod-kubernetes.md)
+- [在JS中如何检测对象的改变？](./_posts/2018-12-28-how-to-use-watch-Object-change.md)
