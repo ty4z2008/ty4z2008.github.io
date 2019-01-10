@@ -66,7 +66,7 @@ netease_comment: false
 gitalk_comment: true
 gitalk_config:
   clientID: ae5ef2c72ebccb988d35
-  clientSecret: ae5ef2c72ebccb988d35
+  clientSecret: 1e4abbe1d79f575d99142c28750c6d72fc878351
   repo: ty4z2008.github.io
   owner: ty4z2008
   admin: ty4z2008
