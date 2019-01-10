@@ -60,6 +60,14 @@ layout: default
                 <div id="cloud-tie-wrapper" class="cloud-tie-wrapper"></div>
                 <!-- 网易云跟帖 评论框 end -->
                 {% endif %}
+
+                {% if site.gitalk_comment %}
+                <!-- gitalk 评论框 start -->
+                <div class="comment">
+                    <div id="gitalk-container" class="disqus-thread"></div>
+                </div>
+                <!-- 网易云跟帖 评论框 end -->
+                {% endif %}
             </div>  
 
     <!-- Side Catalog Container -->

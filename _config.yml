@@ -62,7 +62,13 @@ disqus_shortname: websec
 # Netease settings
 netease_comment: false
 
-
+# Gitalk comment
+gitalk_comment: true
+gitalk_config:
+  clientID: ae5ef2c72ebccb988d35
+  clientSecret: ae5ef2c72ebccb988d35
+  repo: ty4z2008.github.io
+  owner: ty4z2008
 
 # Analytics settings
 # Baidu Analytics 
