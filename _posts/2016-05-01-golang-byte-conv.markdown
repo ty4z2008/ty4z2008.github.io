@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Golang:储存单位转换判断"
+title:  "Golang:存储单位转换判断"
 date:   2016-05-01 23:32:49
 categories: Golang
 tags: Golang

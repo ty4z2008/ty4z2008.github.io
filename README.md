@@ -5,7 +5,7 @@
 - [PostgreSQL的psql命令分析](./_posts/2016-03-12-postgresql-psql-command-analyze.markdown)
 - [Atom常用插件](./_posts/2016-03-13-atom-plugins.markdown)
 - [Qcon 2016年PPT演示小工具](./_posts/2016-04-25-qcon-2016.markdown)
-- [Golang:储存单位转换判断](./_posts/2016-05-01-golang-byte-conv.markdown)
+- [Golang:存储单位转换判断](./_posts/2016-05-01-golang-byte-conv.markdown)
 - [如何写一份好的README](./_posts/2016-05-08-how-to-write-a-good-README.markdown)
 - [纪录一次真实的系统故障总结](./_posts/2016-05-31-a-real-accident-of-information-system.markdown)
 - [阅读：大型网站技术架构.技术原理与案例分析（一）](./_posts/2016-05-31-large-scale-website-architecture-part-1.markdown)
