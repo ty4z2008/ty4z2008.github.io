@@ -20,3 +20,4 @@
 - [在Kubernetes中使用Taints和Toleration划分专用节点](./_posts/2018-12-21-use-taints-and-toleration-manage-pod-kubernetes.md)
 - [在JS中如何检测对象的改变？](./_posts/2018-12-28-how-to-use-watch-Object-change.md)
 - [TiDB 源码阅读笔记：开始](./_posts/2019-06-11-reading-tidb-code-1.md)
+- [后端之路](./_posts/2019-07-12-backend-roadmap-zh.md)
