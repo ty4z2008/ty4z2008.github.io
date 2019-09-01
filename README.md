@@ -21,3 +21,4 @@
 - [在JS中如何检测对象的改变？](./_posts/2018-12-28-how-to-use-watch-Object-change.md)
 - [TiDB 源码阅读笔记：开始](./_posts/2019-06-11-reading-tidb-code-1.md)
 - [后端之路](./_posts/2019-07-12-backend-roadmap-zh.md)
+- [优化MySQL数据插入速度](./_posts/2019-09-01-how-to-speed-up-insert.md)
