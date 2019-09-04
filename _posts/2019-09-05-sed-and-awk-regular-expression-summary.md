@@ -143,6 +143,6 @@ ls -l | awk '{ print "file",$9,"has size",$5,"bytes" }   # 格式化ls命令结�
 **参考阅读**
 
 - [regexp, sed & awk](http://www.brendangregg.com/Unix/re-sed-awk.txt)
-
+- [正则表达式手册](https://tool.oschina.net/uploads/apidocs/jquery/regexp.html)
 
 
