@@ -22,3 +22,4 @@
 - [TiDB 源码阅读笔记：开始](./_posts/2019-06-11-reading-tidb-code-1.md)
 - [后端之路](./_posts/2019-07-12-backend-roadmap-zh.md)
 - [优化MySQL数据插入速度](./_posts/2019-09-01-how-to-speed-up-insert.md)
+- [sed和awk工具，以及正则表达式总结](./_posts/2019-09-05-sed-and-awk-regular-expression-summary.md)
