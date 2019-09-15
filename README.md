@@ -23,3 +23,4 @@
 - [后端之路](./_posts/2019-07-12-backend-roadmap-zh.md)
 - [优化MySQL数据插入速度](./_posts/2019-09-01-how-to-speed-up-insert.md)
 - [sed和awk工具，以及正则表达式总结](./_posts/2019-09-05-sed-and-awk-regular-expression-summary.md)
+- [一张图了解Google技术栈](./_posts/2019-09-15-about-google-tech-stack.md)
