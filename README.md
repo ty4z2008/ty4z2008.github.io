@@ -24,3 +24,4 @@
 - [优化MySQL数据插入速度](./_posts/2019-09-01-how-to-speed-up-insert.md)
 - [sed和awk工具，以及正则表达式总结](./_posts/2019-09-05-sed-and-awk-regular-expression-summary.md)
 - [一张图了解Google技术栈](./_posts/2019-09-15-about-google-tech-stack.md)
+- [[翻译]MySQL 可视化explain查询计划](./_posts/2019-09-25-visual-explain-plan-for-mysql.md)
