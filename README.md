@@ -25,3 +25,4 @@
 - [sed和awk工具，以及正则表达式总结](./_posts/2019-09-05-sed-and-awk-regular-expression-summary.md)
 - [一张图了解Google技术栈](./_posts/2019-09-15-about-google-tech-stack.md)
 - [[翻译]MySQL 可视化explain查询计划](./_posts/2019-09-25-visual-explain-plan-for-mysql.md)
+- [[翻译]消息队列OpenMessaging之使用场景概述](./_posts/2019-10-04-use-case-of-openmessaging-specification-zh-cn.md)
