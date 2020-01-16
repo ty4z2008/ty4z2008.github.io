@@ -24,7 +24,7 @@ tags: DataBase
 
 ​   传统的数据分析数据库都无法同时满足离线计算和实时计算。面对实时计算的场景所需要的成本并不低。下图是传统的大数据计算模型。数据经过提取、转换、加载至指定的特征数据库。假设这一套服务需要引入至少两套新的基础设施以及数据清洗服务。
 
-![image-20191016224326257](https://tva1.sinaimg.cn/large/006y8mN6gy1g8t2059w76j30j909rmy9.jpg)
+![image-20191016224326257](/attachment/20200115/08.jpg)
 
 <p style="text-align:center">图1，ETL处理模式</p>
 
@@ -32,7 +32,7 @@ tags: DataBase
 
 ​   AnalyticDB采用计算和存储分离的架构，同时为了兼并读写性能。对计算层内部采用读写分离架构。如图2：
 
-![image-20191110171451030](https://tva1.sinaimg.cn/large/006y8mN6gy1g8t29dtcwtj30vw0hu148.jpg)
+![image-20191110171451030](/attachment/20200115/07.jpg)
 
 <p style="text-align:center">图2，架构图</p>
 
@@ -42,7 +42,7 @@ tags: DataBase
 
 ​   读写分离的架构可以当读或者写的压力增加时，通过加节点就能缓解查询压力，让整个集群的性能提高以降低压力。广告数据的查询大部分场景都是几个列的数据，涉及多个数据表。传统的数据库存储方式都是按行存储数据，行的存储方式非常有利于数据更新，而相比较数据查询就比较弱。在查询时需要把整行的数据从磁盘上读取出来再在内存中提取需要的字段。这部分对于分析查询的场景是一种资源浪费。列式存储的方式可以在查询上只筛选对应的列字段。ADB是行列混合存储的方式，为了实现这种方式。在数据存储上引入了索引文件来存储行列之间的关系。如图3
 
-![image-20191110182329640](https://tva1.sinaimg.cn/large/006y8mN6gy1g8t48stveyj30ti0l5amo.jpg)
+![image-20191110182329640](/attachment/20200115/06.jpg)
 
 <p style="text-align:center">图3，数据结构</p>
 
@@ -69,11 +69,11 @@ tags: DataBase
 
 ​       读写分离会涉及到一个读写数据一致性的问题。假设，写节点收到一个写入请求后，立即来了一条读请求。ADB使用增量数据加基线数据的方式。当用户写入数据到写节点，先写日志然后返回成功。此时客户端立即发送一条数据查询的语句查询被分派到读节点。读节点会从写节点拉取增量数据（增量数据也是存在索引的，是排序索引）和盘古系统拉取基线数据，在比对数据版本后合并数据并返回。如图4和图5
 
-![image-20191115122452109](https://tva1.sinaimg.cn/large/006y8mN6gy1g8ylz8eqnmj30ds08ptb8.jpg)
+![image-20191115122452109](/attachment/20200115/05.jpg)
 
 <p style="text-align:center">图4，实时读工作流</p>
 
-![image-20191115131212206](https://tva1.sinaimg.cn/large/006y8mN6gy1g8yncfrn57j30de07swhe.jpg)
+![image-20191115131212206](/attachment/20200115/04.jpg)
 
 <p style="text-align:center">图5，增量数据和基线数据合并过程</p>
 
@@ -81,7 +81,7 @@ tags: DataBase
 
 ​   为了解决数据的存储问题，ADB会自动进行分区。用户在创建表时指定分区的字段即可。在数据库内部按照三副本方式存放，多副本的方式也是为了容错。如图6
 
-![image-20191115132744244](https://tva1.sinaimg.cn/large/006y8mN6gy1g8ynslp24pj30ld0agtdi.jpg)
+![image-20191115132744244](/attachment/20200115/03.jpg)
 
 <p style="text-align:center">图6，数据分区</p>
 
@@ -91,7 +91,7 @@ tags: DataBase
 
 数据同步采用全量+增量的数据导入方式，通过DTS服务导入到ADB中。在导入的过程中把一些基础表设置为维度表（维度表会在每个读节点存储）架构如图7
 
-![image-20191115132308177](https://tva1.sinaimg.cn/large/006y8mN6gy1g8ynntd2xij30vs09udie.jpg)
+![image-20191115132308177](/attachment/20200115/02.jpg)
 
 <p style="text-align:center">图7，数据同步架构</p>
 
@@ -113,7 +113,7 @@ SQL兼容性测试方案：
 > 1000次查询，压测时长100秒，5个pod .
 > 查询样本库10条复杂报表SQL，覆盖全维度、全指标。测试结果如图
 
-![image-20191122152102369](https://tva1.sinaimg.cn/large/006y8mN6gy1g96ueoyerrj30i9082q4c.jpg)
+![image-20191122152102369](/attachment/20200115/01.jpg)
 
 
 
@@ -133,10 +133,10 @@ SQL兼容性测试方案：
 
 ​   数据通过DTS同步到ADB，API代码中新建一个ADB配置，报表所有读查询使用ADB进行查询。数据写入和更新还是写入MySQL，再通过DTS同步到ADB。
 
-###第四章 总结
+### 第四章 总结
 
 ​   AnalyticDB3.0 for MySQL最近的一次更新是在2019年12月份，本次调研的时间为11月份。中间相差有一个月可能存在一定的差异，另外还有对应的for PostgreSQL版本。相比较而言PostgreSQL的功能特性要多，支持Oracle部分语法等。当业务使用的阿里云产品时，随着数据量的增加，并且不想做太大的业务改动。ADB也是一个可以调研的方向
 
-###参考文献
+**参考文献**
 
 - [AnalyticDB: Real-time OLAP Database System at Alibaba Cloud](http://www.vldb.org/pvldb/vol12/p2059-zhan.pdf) 
