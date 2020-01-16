@@ -26,3 +26,4 @@
 - [一张图了解Google技术栈](./_posts/2019-09-15-about-google-tech-stack.md)
 - [[翻译]MySQL 可视化explain查询计划](./_posts/2019-09-25-visual-explain-plan-for-mysql.md)
 - [[翻译]消息队列OpenMessaging之使用场景概述](./_posts/2019-10-04-use-case-of-openmessaging-specification-zh-cn.md)
+- [关于AnalyticDB 3.0的调研和分析](./_posts/22020-01-15-about-aliyun-analyticdb-for-mysql.md)
