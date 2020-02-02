@@ -1163,7 +1163,7 @@ samp {
   margin-top: 10px;
 }
 
-.post-preview > .post-tags .tag{
+.post-preview .post-tags .tag{
   padding: 2px 10px;
   text-decoration: none;
   border-radius: 20px;

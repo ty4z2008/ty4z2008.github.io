@@ -4,12 +4,6 @@
  * Licensed under Apache 2.0 (https://github.com/IronSummitMedia/startbootstrap/blob/gh-pages/LICENSE)
  */
 
- /*!
- * Hux Blog v1.6.0 (http://startbootstrap.com)
- * Copyright 2016 @huxpro
- * Licensed under Apache 2.0 
- */
-
 // Tooltip Init
 // Unuse by Hux since V1.6: Titles now display by default so there is no need for tooltip
 // $(function() {
