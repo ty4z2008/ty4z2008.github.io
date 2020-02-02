@@ -1,7 +1,4 @@
-/*!
- * Hux Blog v1.7.0 (http://huxpro.github.io)
- * Copyright 2018 Hux <huxpro@gmail.com>
- */
+
 
 @media (min-width: 1200px) {
   .post-container,
@@ -1159,6 +1156,23 @@ samp {
 .post-preview > .post-meta > a:hover,
 .post-preview > .post-meta > a:focus {
   color: #0085a1;
+  text-decoration: underline;
+}
+.post-preview > .post-tags {
+  display: block;
+  margin-top: 10px;
+}
+
+.post-preview > .post-tags .tag{
+  padding: 2px 10px;
+  text-decoration: none;
+  border-radius: 20px;
+  font-size: 13px;
+  margin-right: 3px;
+  color: #9EABB3;
+  border: #E3E9ED 1px solid;
+}
+.post-preview > .post-tags .tag:hover{
   text-decoration: underline;
 }
 @media only screen and (min-width: 768px) {
