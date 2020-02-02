@@ -3,7 +3,7 @@ layout: post
 title:  "如何阅读技术文档"
 date:   2020-02-02 23:29:49
 categories: reading
-tags: 消息队列 
+tags: 消息队列 阅读笔记
 ---
 
 ## 如何阅读文档
