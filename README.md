@@ -27,4 +27,4 @@
 - [[翻译]MySQL 可视化explain查询计划](./_posts/2019-09-25-visual-explain-plan-for-mysql.md)
 - [[翻译]消息队列OpenMessaging之使用场景概述](./_posts/2019-10-04-use-case-of-openmessaging-specification-zh-cn.md)
 - [关于AnalyticDB 3.0的调研和分析](./_posts/2020-01-15-about-aliyun-analyticdb-for-mysql.md)
-- [如何阅读技术文档](./_posts/2020-02-01-how-to-read-document.md)
+- [如何阅读技术文档](./_posts/2020-02-02-how-to-read-document.md)
