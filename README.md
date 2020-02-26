@@ -28,3 +28,4 @@
 - [[翻译]消息队列OpenMessaging之使用场景概述](./_posts/2019-10-04-use-case-of-openmessaging-specification-zh-cn.md)
 - [关于AnalyticDB 3.0的调研和分析](./_posts/2020-01-15-about-aliyun-analyticdb-for-mysql.md)
 - [如何阅读技术文档](./_posts/2020-02-01-how-to-read-document.md)
+- [MIT 6.824 分布式系统课程第一课：介绍笔记](./_posts/2020-02-26-mit-6.824-lecture-1-introduce.md)
