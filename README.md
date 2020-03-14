@@ -30,3 +30,4 @@
 - [如何阅读技术文档](./_posts/2020-02-02-how-to-read-document.md)
 - [MIT 6.824 分布式系统课程第一课：介绍笔记](./_posts/2020-02-26-mit-6.824-lecture-1-introduce.md)
 - [MIT 6.824 分布式系统课程第二课：RPC和多线程](./_posts/2020-03-03-mit-6.824-lecture-2-rpc-and-threads.md)
+- [MIT 6.824 分布式系统课程第三课：GFS](./_posts/2020-03-14-mit-6.824-lecture-3-gfs.md)
