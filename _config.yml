@@ -76,7 +76,7 @@ netease_comment: false
 # ba_track_id: [your track id]
 
 # Google Analytics
-ga_track_id: 'UA-50183451-2'            # Format: UA-xxxxxx-xx
+ga_track_id: 'UA-50183451-1'            # Format: UA-xxxxxx-xx
 ga_domain: blog.microdba.com
 
 
