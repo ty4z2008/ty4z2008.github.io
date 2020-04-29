@@ -33,4 +33,5 @@
 - [MIT 6.824 分布式系统课程第三课：GFS](./_posts/2020-03-14-mit-6.824-lecture-3-gfs.md)
 - [MIT 6.824 分布式系统课程第四课：主备复制](./_posts/2020-03-28-mit-6.824-lecture-4-primary-backup-replication.md)
 - [MIT 6.824 分布式系统课程第五课：Go线程和Raft](./_posts/2020-04-03-mit-6.824-lecture-5-go-thread-and-raft.md)
+- [MIT 6.824 Lecture 6: 错误容忍：Raft（1）](./_posts/2020-04-29-mit-6.824-lecture-6-fault-tolerance-raft-1.md)
 
