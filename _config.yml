@@ -110,5 +110,9 @@ friends: [
     {
         title: "Google",
         href: "https://google.com/"
+    },
+    {
+        title: "Web导航",
+        href: "https://frontend.microdba.com/"
     }
 ]
