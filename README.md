@@ -34,4 +34,5 @@
 - [MIT 6.824 分布式系统课程第四课：主备复制](./_posts/2020-03-28-mit-6.824-lecture-4-primary-backup-replication.md)
 - [MIT 6.824 分布式系统课程第五课：Go线程和Raft](./_posts/2020-04-03-mit-6.824-lecture-5-go-thread-and-raft.md)
 - [MIT 6.824 分布式系统课程第六课: 错误容忍：Raft（1）](./_posts/2020-04-29-mit-6.824-lecture-6-fault-tolerance-raft-1.md)
+- [企业级私有镜像仓库Harbor](./_posts/2020-10-20-harbor-a-enterprise-private-registry.mdd)
 
