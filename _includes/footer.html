@@ -20,7 +20,11 @@
 <!-- Bootstrap Core JavaScript -->
 <!-- Currently, only navbar scroll-down effect at desktop still depends on this -->
 <script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.2/js/bootstrap.min.js"></script>
+<script src="//cdn.jsdelivr.net/npm/pangu@4.0.7/dist/browser/pangu.min.js"></script>
 
+<script type="text/javascript">
+    pangu.spacingElementByTagName('article');
+</script>
 <!-- Custom Theme JavaScript -->
 <script src="{{ "/js/blog.min.js " | prepend: site.baseurl }}"></script>
 
